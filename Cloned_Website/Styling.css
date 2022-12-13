@@ -1,0 +1,154 @@
+/*-----Header Styling-----*/
+
+ .search{
+    vertical-align:middle;
+    margin: -4px 0px 20px 15px;
+    padding: 10px; 
+    width: 280px;
+}
+.search-bar{
+    border: solid black 1px;
+    padding: 12px;
+    margin: 0px 150px -5px -4px;
+}
+select{
+    border: none;
+    width: 130px;
+}
+a:link{
+    text-align: right;
+    color: black;
+    text-decoration: none;
+    font-size: small; 
+   
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+a:active{
+        color: green;
+}
+
+/*-----1st div Styling -----*/
+
+.menu{
+    background: gold;
+    padding: 3px 0px 3px 0px; 
+    text-transform: uppercase; 
+} 
+.category{
+font-size: small;
+width: 140px; 
+background-color: gold;
+border: none;
+font-weight: 600;
+text-transform: uppercase;
+text-align: center 20px;
+cursor: pointer;
+}
+optgroup,option{
+background-color: white;
+}
+ul{
+    list-style-type: none;
+}
+li{
+text-align: center;
+line-height: 20px;
+font-size: 14px;
+display: inline;
+font-weight: 500;
+margin-left: 15px;
+}
+#carter{
+margin: -34px 0px -30px 10px;
+height: 57px;
+width:86px;
+vertical-align: middle;
+}
+
+/*-----2nd div sliding animation -----*/
+
+.sale {
+    width: 100%;
+    display: flex;
+    animation: slide 60s infinite;
+}
+/*  img {
+    width: 100%;
+}   */
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(-200%);
+    }
+
+    30% {
+        transform: translateX(-300%);
+    }
+
+    40% {
+        transform: translateX(-400%);
+    }
+
+    50% {
+        transform: translateX(-500%);
+    }
+
+    60% {
+        transform: translateX(-600%);
+    }
+
+    70% {
+        transform: translateX(-700%);
+    }
+
+    85% {
+        transform: translateX(-800%);
+    }
+
+    100% {
+        transform: translateX(-900%);
+    }
+}
+
+/*-----  Premium Products -----*/
+
+.premiumdiv{
+    padding-top: 20px;
+     width: 1320px; 
+     height: 1800px;  
+     background-color:rgb(231, 231, 231);
+    
+}  
+#boutique{
+    padding: 15px 10px 0px 10px;
+    
+} 
+#fheading{
+           
+    margin-left: 500px;
+    margin-top: -10px;
+}     
+#menubtn{
+    padding: 10px 60px 10px 60px;
+    color: orangered;
+    border: solid 1px;
+    border-radius: 30px;
+    font-size: x-large;
+}
+.span {
+    font-size: large;
+}
