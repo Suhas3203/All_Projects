@@ -1,0 +1,28 @@
+body {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdvNYQBoIMz_r5bXcxrmdqAq2Idx1Mmn85nA&usqp=CAU) no-repeat;
+    background-size: 100%;
+}
+
+#f1,
+#f2 {
+    font-size: large;
+    color: rgba(15, 15, 15, 0.8);
+    /* rgb colour method used */
+    text-align: center;
+}
+
+.fclass {
+    background-color: lightblue;
+    text-align: right;
+    color: #7c7c7c;
+    /* hex color method used */
+}
+
+#reset,
+#submit,
+#button,
+#tag {
+    background-color: rgb(72, 241, 72);
+    font-size: large;
+    color: hsl(281, 77%, 24%);
+}

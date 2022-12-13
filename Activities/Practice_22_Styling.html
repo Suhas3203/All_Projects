@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Survey Form</title>
+    <link rel="stylesheet" href="Practice_3.css">
+    <script>
+        function display(medical) {
+            alert(medical.innerHTML + " is " + medical.getAttribute("data-medical"));
+        }
+    </script>
+</head>
+
+<body>
+    <form action="1.txt" method="get">
+        <fieldset id="f1">
+            <legend> Personal Details </legend>
+            <label> Enter Your Full Name-
+                <input type="text" placeholder="Surname         Name          Middle Name" size="40"> </label> <br><br>
+            <label> Enter your Email Address-
+                <input type="email" multiple placeholder="abc123@gmail.com" /> </label> <br><br>
+            <label> Enter Mobile Number-
+                <input type="tel" maxlength="10" placeholder="10-digit Mobile Number" /> </label> <br><br>
+            <label> Select your Gender-
+                <input type="radio" name="gender" /> Male </label>
+            <label> <input type="radio" name="gender" /> Female </label> <br><br>
+
+            <label> Date of Birth- <input type="date" min="1995-01-01" max="2022-05-01" /> </label>
+        </fieldset>
+        <fieldset id="f2">
+            <legend>Medical Details </legend>
+            <label> Choose Your Blood Group-
+                <select size="2">
+                    <option>----Select-----</option>
+                    <optgroup label="Basic Blood Groups">
+                        <option> O<sup>+</sup> </option>
+                        <option> O<sup>-</sup> </option>
+                        <option> A<sup>+</snoup>
+                        </option>
+                        <option> A<sup>-</sup> </option>
+                        <option> B<sup>+</sup> </option>
+                        <option> B<sup>-</sup> </option>
+                        <option> AB<sup>+</sup> </option>
+                        <option> AB<sup>-</sup> </option>
+                    </optgroup>
+                    <optgroup label="Other Blood Groups">
+                        <option> Rh-null</option>
+                        <option> ABO </option>
+                    </optgroup>
+                </select> </label> <br><br>
+            <label> <input type="checkbox"> - Disabilities Felt during Last Week </label> <br><br>
+            <label> Explain Your Disability- <input type="text" size="50" placeholder="disabilities" /> </label>
+            <br><br>
+        </fieldset>
+        <fieldset class="fclass">
+            <legend> Data Collection Status- </legend>
+            <label> Live Status-
+                <progress value="40" max="100"></progress> </label> <br><br>
+            <li data-medical="In progress" onclick="display(this)"> Survey </li> <br><br>
+        </fieldset>
+        <fieldset class="fclass">
+            <input type="reset" id="reset" />
+            <input type="submit" id="submit" />
+            <input type="button" value="Submit" id="button" />
+            <button type="submit" id="tag">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
