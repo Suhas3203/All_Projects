@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Software Management System</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<style type="text/css">
+table, th, td {
+	border: solid;
+	background-color: rgb(255, 255, 255);
+	border-collapse: collapse;
+	border-color: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	text-align: center;
+}
+
+.text {
+	width: 200px;
+}
+
+input {
+	padding: 5px 10px 5px 10px;
+}
+
+form {
+	padding-left: 390px;
+}
+
+body {
+	background-image:
+		url('data:image/jpeg;base64,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');
+}
+</style>
+</head>
+<body>
+	<div class="container text-center">
+		<img alt="login_page_scr"
+			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPm4QWv-oOzMs-g1416nupSxcmbHdNO_j5WUO2bHkU8WLAAj2RHuZ-AgKcb-24JyV-yjE&usqp=CAU"
+			style="padding-top: 70px">
+
+		<form th:action="@{/validatingData}" th:object=${adminObj}
+			method="get">
+			<!-- target="_blank" -->
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2">Sign in</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Email Address</td>
+						<td><input type="text" class="text" name="username"
+							th:field="*{username}" autofocus required /></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>Password</td>
+						<td><input type="password" class="text" name="password"
+							th:field="*{password}" required /></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2"><a href="/validatingData"> <input
+								type="submit" class="btn btn-success" value="Sign In" />
+						</a></td>
+
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Software Management System</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.title {
+	color: grey;
+	font-size: 18px;
+}
+
+button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+a:link, a:visited {
+	background-color: black;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: black;
+}
+
+button:hover, a:hover {
+	opacity: 0.7;
+}
+
+body {
+	background-color: rgba(200, 150, 200, 0.3);
+}
+</style>
+</head>
+<body>
+
+	<h2 style="text-align: center">Profile Card</h2>
+
+	<div class="card">
+		<img
+			src="https://porteous.com.au/wp-content/uploads/2016/09/dummy-profile-pic-male-300x300.jpg"
+			alt="Suhas" style="width: 100%; height: 100%;">
+		<h3>Suhas Deshmukh</h3>
+		<p class="title">CEO & Founder, Software_Management_System</p>
+		<!-- 	<p>Full_Stack_Developer</p>		 -->
+
+		Visit us at: http://localhost:8080/home <br> <br>
+		<p>
+			<button>
+				<a href="mailto:suhas3203@gmail.com"> Contact </a>
+			</button>
+		</p>
+	</div>
+	<strong> <mark> Online Platform Only </mark>
+	</strong>
+
+	<p>** Hope you are enjoying this application.</p>
+	<div class="col-lg-3" style="text-align: right">
+		<a th:href="@{/logoutFromApp}"
+			class="btn btn-success.focus btn-warning btn-sm mb-3">Logout</a>
+	</div>
+	</div>
+</body>
+</html>

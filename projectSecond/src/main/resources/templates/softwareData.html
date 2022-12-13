@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Software Management System</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+<script>
+function myFunction() {
+ 	var status= confirm("You want to delete this record?");
+ 	 if (status==true) {
+ 		   return true;
+ 		  }
+ 	 else{
+ 		
+ 	 	 event.preventDefault();
+ 	 	 return false;
+ 	 	 }
+	   
+}
+</script>
+</head>
+<body>
+	<div class="container" style="background-color: #05ffb0;">
+
+		<div class="row">
+			<h1 style="margin-left: 400px">List Of Softwares</h1>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3">
+				<a th:href="@{/addNewSoftware}" class="btn btn-primary btn-sm mb-3">Add
+					New Software</a>
+
+			</div>
+			<div class="col-lg-3"></div>
+		</div>
+
+
+		<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th>Sr_No</th>
+					<th>Software_Name</th>
+					<th>Software_Creator</th>
+					<th>Software_Price</th>
+					<th>Software_Rating</th>
+					<th>Software_Stock</th>
+					<th>Update Record</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr th:each="softwares:${softwaresList}">
+					<td th:text="${softwares.Sr_No}"></td>
+					<td th:text="${softwares.nameOfSoftware}"></td>
+					<td th:text="${softwares.creatorOfSoftware}"></td>
+					<td th:text="${softwares.price}"></td>
+					<td th:text="${softwares.rating}"></td>
+					<td th:text="${softwares.stockOfSoftware}"></td>
+					<td><a
+						th:href="@{/softwareEdit/{Sr_No}(Sr_No= ${softwares.Sr_No})}"
+						class="btn btn-primary"> Update </a> <a
+						th:href="@{/deleteSoftware/{Sr_No}(Sr_No= ${softwares.Sr_No})}"
+						class="btn btn-danger" onclick="myFunction()"> Delete </a></td>
+				</tr>
+
+			</tbody>
+		</table>
+		<div style="text-align: right">
+			<a th:href="@{/logoutFromApp}"
+				class="btn btn-outline-dark btn-warning btn-sm mb-3"
+				style="text-align: right;">Logout</a>
+		</div>
+	</div>
+</body>
+</html>

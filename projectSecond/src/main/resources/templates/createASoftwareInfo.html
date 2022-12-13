@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Software Management System</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1 class="text-center" style="margin-left: 50px">Insert new Software</h1>
+		</div>
+			<div class="card-body">
+				<form th:action="@{/insertNewSoftware}" th:object=${softwareDetails} method = "post">
+					<div class="form-group">
+						<label> Software Name</label> 
+						<input type="text" name="softwaresName"
+							th:field="*{nameOfSoftware}" class="form-control"
+							placeholder="Enter softwares name... ">
+					</div>
+					<div class="form-group">
+						<label> Software Creator </label> 
+						<input type="text" name="owner_of_software"
+							th:field="*{creatorOfSoftware}" class="form-control"
+							placeholder="Enter name of software creator...">
+					</div>
+					<div class="form-group">
+						<label>Price for Software</label> <input type="number" name="priceOfSoftware"
+							th:field="*{price}" class="form-control"
+							placeholder="Enter price of the software... ">
+					</div>
+					<div class="form-group">
+						<label>Rating for Software</label> <input type="number" name="software_Rating"
+							th:field="*{rating}" class="form-control"
+							placeholder="Enter rating for the software... ">
+					</div>
+					<div class="form-group">
+						<label>Stock Available for Software</label> <input type="number" name="stock_Available"
+							th:field="*{stockOfSoftware}" class="form-control"
+							placeholder="Enter Stock Available of the software... ">
+					</div>
+
+					<div class="box-footer">
+						<button type="submit" class="btn btn-success"> Add New Software </button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+</body>
+</html>
