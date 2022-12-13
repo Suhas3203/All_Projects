@@ -1,0 +1,54 @@
+
+ body {
+    margin: 200px 300px 200px 400px;
+}
+
+table {
+    outline: solid white;
+    border: solid white 1px;
+    background-color: rgb(6, 4, 22);
+}
+
+th {
+    background-color: rgb(197, 142, 4);
+    text-align: left;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+td {
+    /* background-color: rgb(6, 4, 22); */
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px 50px 10px 50px;
+    color: rgb(197, 142, 4);
+}
+
+input {
+    padding: 8px;
+}
+
+.footer {
+    text-align: right;
+    background-color: rgb(197, 142, 4);
+    height: 40px;
+    padding: 15px;
+}
+
+.button {
+    background: green;
+    padding: 10px 30px 10px 30px;
+    border: solid green 1px;
+    color: white;
+    font-size: medium;
+}
+
+.cancel {
+    background: red;
+    padding: 10px 20px 10px 20px;
+    border: solid red 1px;
+    color: white;
+    font-size: medium;
+}

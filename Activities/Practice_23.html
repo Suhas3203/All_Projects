@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="page description" content="It is a registration portal">
+    <meta name="keywords" content="sign up, log in,registration">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Author" content="Suhas Deshmukh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Act_03.css">
+</head>
+
+<body>
+    <form action="Act_01.html" method="post" target="_blank">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        Sign Up
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <label for="fname"> First Name </label> </td>
+                    <td> <input type="text" id="fname" name="First Name" placeholder="Enter First Name" size="40"
+                            autofocus required /> </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <label for="lname"> Last Name </label> </td>
+                    <td> <input type="text" id="lname" name="Last Name" size="40" placeholder="Enter Last Name"
+                            required />
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <label for="DOB"> Date of Birth </label> </td>
+                    <td> <input type="date" id="DOB" required /> </td>
+                </tr>
+            </tbody>
+
+            <tr>
+                <td> <label for="gndr"> Select Your Gender </label> </td>
+                <td> <input type="radio" id="gndr" name="gender" value="Male" /> Male
+                    <label> <input type="radio" name="gender" value="Female" /> Female </label>
+                </td>
+            </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <label for="country"> Country </label> </td>
+                    <td> <input list="allcountry" id="country" size="40" placeholder="Country"
+                            autocomplete="country-name" />
+                        <datalist id="allcountry">
+                            <option> India </option>
+                            <option> USA </option>
+                            <option> UK </option>
+                            <option> Russia </option>
+                            <option> Japan </option>
+                            <option> Nepal </option>
+                            <option> Saudi Arebia </option>
+                            <option> Quatar </option>
+                            <option> Israil </option>
+                        </datalist>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <label for="mail"> E-mail </label> </td>
+                    <td> <input type="email" id="mail" title="ex.abc123@gmail.com" size="40" placeholder="Enter E-mail"
+                            pattern="[a-z0-9]{8-10}[@gmail.com]{1}" required /> </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <label for="phone"> Phone </label> </td>
+                    <td> <input type="tel" id="phone" placeholder="Enter Phone" title="10-digit mobile no. only"
+                            size="40" maxlength="10" pattern="[9]{1}[0-9]{9}" required /> </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <label for="pwd"> Password </label> </td>
+                    <td> <input type="password" id="pwd" name="password" title="It contain A-Z,a-z,0-9"
+                            placeholder="password should contain 8-10 characters" pattern="[A-Za-z0-9]{8-20}" size="40"
+                            required /> </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td> <label for="cpwd"> Confirm Password </label> </td>
+                    <td> <input type="password" id="cpwd" name="password" placeholder="should be matched with above"
+                            size="40" required /> </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td colspan="2"> <label> <input type="checkbox" name="terms" /> I Agree to the Terms of use
+                        </label>
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="footer"> <input type="submit" class="button" /> <input type="button"
+                            class="cancel" value="Cancel" /> </td>
+
+
+                    <!--   <a href="javascript:alert('Form is Submitted')"> <input type="button" value="Submit"> </a> -->
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>

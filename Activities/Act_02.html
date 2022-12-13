@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Page description" content="It is a type of Feedback Portal">
+    <meta name="keywords" content="contact us, feedback, review, message">
+    <meta name="Author" content="Mr.Suhas B. Deshmukh">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback/Message Form</title>
+    <link rel="stylesheet" href="Act_02.css">
+</head>
+
+<body>
+    <form action="Practice_23.html" method="get" target="_blank">
+        <table>
+            <tr>
+                <th>
+                    <label> <a href="tel:9876543210"> Contact Us! </a> </label>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Name......." size="60" maxlength="60" autofocus required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" placeholder="E-mail......" size="60" maxlength="60"
+                        pattern="[a-z0-9]{8-12}[@gmail.com]{1}" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Subject......." size="60" maxlength="50" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea rows="5" cols="60" placeholder="Message......."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="Practice_23.html"> 
+                    <input type="button" value="SEND MESSAGE" class="button" > </a>
+                </td>
+            </tr>
+            <!--
+          Or Use
+            <tr>
+                <td id="submit">
+
+                    <a href="javascript:alert('Details Submitted Sucessfully.')">
+                        <input type="button" value="Send Message" />
+                    </a>
+                </td>
+            </tr>  -->
+        </table>
+    </form>
+
+</body>
+
+</html>

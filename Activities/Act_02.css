@@ -1,0 +1,56 @@
+
+body {
+    background-image: url(https://image.shutterstock.com/image-photo/feedback-concept-hand-pressing-button-260nw-345101687.jpg);
+    background-size: 100%;
+    margin: 200px 300px 150px 400px;
+}
+
+table {
+    text-align: center;
+    background-color: rgb(253, 233, 173);
+    border: solid 8px gray;
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(228, 93, 93);
+    font-size: 40px;
+    padding: 10px;
+}
+
+a:link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+a:visited {
+    color: aqua;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+a:active {
+    color: aquamarine;
+}
+
+td {
+    padding: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+}
+
+.button {
+    background-color: rgba(255, 255, 0, 0.5);
+    border: solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 10px 150px 10px 150px;
+    cursor: pointer;
+}
